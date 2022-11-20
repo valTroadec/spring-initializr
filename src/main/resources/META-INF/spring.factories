@@ -1,0 +1,7 @@
+com.test.initializr.generator.apim.ApimPoliciesFactory=\
+com.test.initializr.generator.apim.ApimPoliciesPublicFactory,\
+com.test.initializr.generator.apim.ApimPoliciesPrivateFactory
+
+io.spring.initializr.generator.project.ProjectGenerationConfiguration=\
+com.test.initializr.config.CustomInitializrAutoConfiguration,\
+com.test.initializr.config.CustomApimPoliciesConfiguration\
