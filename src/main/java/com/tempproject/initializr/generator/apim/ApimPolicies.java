@@ -23,17 +23,8 @@ import org.springframework.core.io.support.SpringFactoriesLoader;
 
 import java.util.Objects;
 
-/**
- * A build system that can be used by a generated project.
- *
- * @author Andy Wilkinson
- */
 public interface ApimPolicies {
 
-    /**
-     * The id of the build system.
-     * @return the id
-     */
     String id();
 
     boolean value();

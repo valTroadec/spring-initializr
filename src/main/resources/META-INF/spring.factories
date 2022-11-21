@@ -4,4 +4,7 @@ com.tempproject.initializr.generator.apim.ApimPoliciesPrivateFactory
 
 io.spring.initializr.generator.project.ProjectGenerationConfiguration=\
 com.tempproject.initializr.config.projectgenerationconfiguration.CustomInitializrAutoConfiguration,\
+com.tempproject.initializr.config.projectgenerationconfiguration.CustomAPIConfiguration,\
+com.tempproject.initializr.config.projectgenerationconfiguration.CustomDockerProjectGenerationConfiguration,\
+com.tempproject.initializr.generator.contributor.api.config.APIRestControllerProjectGenerationDefaultContributorConfiguration,\
 com.tempproject.initializr.config.projectgenerationconfiguration.CustomApimPoliciesConfiguration\

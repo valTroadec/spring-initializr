@@ -9,4 +9,6 @@ public class CustomProjectRequest extends WebProjectRequest {
     private boolean apimPoliciesPublic;
 
     private boolean apimPoliciesPrivate;
+
+    private String apiName;
 }

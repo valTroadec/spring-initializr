@@ -15,6 +15,7 @@ import io.spring.initializr.web.project.*;
 import org.springframework.util.Assert;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class CustomProjectRequestToDescriptionConverter< R extends CustomProjectRequest> extends DefaultProjectRequestToDescriptionConverter
@@ -64,6 +65,7 @@ public class CustomProjectRequestToDescriptionConverter< R extends CustomProject
         });
     description.setApimPoliciesConfigPrivate(ApimPolicies.forIdAndValue(ApimPoliciesPrivate.ID, request.isApimPoliciesPrivate()));
     description.setApimPoliciesConfigPublic(ApimPolicies.forIdAndValue(ApimPoliciesPublic.ID, request.isApimPoliciesPublic()));
+    description.setApiName(Optional.ofNullable(request.getApiName()).orElse("todo"));
   }
 
   private void validate(ProjectRequest request, InitializrMetadata metadata) {

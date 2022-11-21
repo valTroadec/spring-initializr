@@ -11,4 +11,5 @@ public class CustomMutableProjectDescription extends MutableProjectDescription {
 
   private ApimPolicies apimPoliciesConfigPublic;
   private ApimPolicies apimPoliciesConfigPrivate;
+  private String apiName;
 }

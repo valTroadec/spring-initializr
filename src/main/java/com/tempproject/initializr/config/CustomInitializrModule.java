@@ -25,11 +25,6 @@ import com.fasterxml.jackson.databind.module.SimpleModule;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 import io.spring.initializr.generator.version.VersionProperty;
 
-/**
- * A {@link SimpleModule} that registers custom serializers.
- *
- * @author Stephane Nicoll
- */
 class CustomInitializrModule extends SimpleModule {
 
     CustomInitializrModule() {
